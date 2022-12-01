@@ -1,0 +1,447 @@
+/*Normalizacion del viewport */
+* {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    box-sizing: border-box;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    list-style: none;
+}
+
+body{
+    background-image: url(img/fondo.png);
+    background-size: cover;
+}
+/* ------------------------------HEADER DE ARRIBA------------------------------------ */
+header {
+    display: flex;
+    justify-content: end;
+    background-color: #1C1F26;
+    height: 40px;
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin-right: 21px;
+    padding: 4px;
+}
+
+header ul li a svg {
+    color: gray;
+    width: 20px;
+    height: 20px;
+}
+
+.img-header {
+    width: 30px;
+    height: 30px;
+}
+
+.link-header svg:hover {
+    color: white;
+}
+
+/* -----------------------MENU DE NAVEGACION---------------------------------- */
+.cont-nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 1em;
+    z-index: 100;
+    background-color: white;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.cont-nav a img {
+    padding-left: 2em;
+    height: 2em;
+}
+
+.cont-nav ul li {
+    display: inline-block;
+}
+
+.nav-link:hover {
+    color: hsl(25, 100%, 50%);
+}
+
+/* -----BOTON DEL NAV-------- */
+.cont-nav span a p {
+    background-color: hsl(25, 100%, 50%);
+    color: black;
+    padding: 10px;
+    width: 8em;
+    height: 3em;
+    margin-right: 2em;
+}
+
+/* -----------------------BOOSTRAP------------------------------- */
+.nav-link {
+    color: black;
+    font-size: 16px;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+.cont-mensaja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/fondo-two.jpg);
+    width: 100%;
+    height: 65px;
+}
+
+section div p {
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+
+.link-section {
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* ------------------------------SECTION MENSAJE ANIMADO------------------------------------- */
+/* IMG PRINCIPAL*/
+/* .contenedor-img-principal{
+    position: relative;
+    height: 44em;
+    width: 100%;
+} */
+.contenedor-img-principal{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-size: cover;
+    background-position: center;
+    height: 44em;
+    width: 100%;
+    z-index: 100;
+    background-image: url(img/fondo-principal.jpg);
+}
+.container-derecha{
+    width: 25%;
+    margin:0 18em;
+    color: white;
+}
+.container-derecha div h1{
+    font-weight: 900;
+}
+.container-derecha div p{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+/* ------------------------------- */
+
+/* .contenedor-img-principal div img:hover{
+    transform: scale(1.2);
+} */
+/* ----------------- */
+.cont-marque {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #144162;
+    height: 4em;
+    color: white;
+}
+
+.cont-marque marquee img {
+    margin: 0em 2em 0em 2em;
+    height: 2em;
+}
+
+.cont-marque marquee span {
+    margin: 0em 1em 0em 1em;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ---------------------------CARD-------------------------------------------------- */
+.cont-card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background: url(img/fondo.png); */
+}
+
+.card {
+    background: transparent;
+    border: 0px solid;
+    width: 35%;
+    margin: 3em;
+}
+
+.cont-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url(img/fondo.png); */
+    height: 10em;
+}
+
+.cont-title h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 0.1em solid black;
+    width: 13em;
+    height: 3em;
+    transition: 1s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: transparent;
+    color: gray;
+    border: 0.1em solid black;
+}
+
+/* --------------------------------------------------------------- */
+/* ----------------------Video------------------------------- */
+.video-fifa {
+    background-color: #1C1F26;
+    width: 100%;
+    height: 700px;
+}
+.titulo-video{
+    padding-top: 40px;
+    text-align: center;
+    height: 100px;
+    color: white;
+    font-weight: 900;
+}
+.cont-video{
+    height: 600px;
+}
+
+.video-fifa iframe {
+    height: 90%;
+    width: 80%;
+    margin-left: 10%;
+}
+/* --------------------------------------------------------------------- */
+/* -----------------CARRUSEL------------------------*/
+.carousel{
+    margin: 50px auto;
+    width: 75%;
+    height: 400px;
+    background-color: #1C1F26;
+}
+.carousel-item .cuadro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 720px;
+    height: 400px;
+}
+.cont-carusel{
+    margin-left: 4em;
+}
+.cont-carusel h1{
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+}
+.btn-carusel{
+    margin-left: 4em;
+}
+.btn-carusel input{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    width: 12em;
+    height: 3em;
+    transition: 1s;
+}
+.btn-carusel input:hover{
+    transform: scale(1.2);
+}
+/* ---------------------------------------------------- */
+.titulo-fifa{
+    text-align: center;
+    padding-top: 50px;
+}
+.titulo-fifa h2{
+    font-size: 40px;
+    font-weight: 900;
+    color: #1C1F26;
+}
+/* ------------------------------------------------------------------------------------- */
+.footer-sup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50px;
+}
+.footer-sup span{
+    font-size: 20px;
+    font-weight: 400;
+}
+/* -------------------------------------------------------------------- */
+.footer-med{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:     #242a35;
+    color: white;
+    width: 100%;
+    height: 100px;
+
+}
+.footer-med p a{
+    color: hsl(25, 100%, 50%);
+}
+/* -------------------------FOOTER-------------------------------------- */
+footer {
+    background-color: #1C1F26;
+  
+}
+
+.cont-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 75px;
+}
+
+.cont-footer__div {
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-left: 50px;
+    width: 70%;
+    color: white;
+}
+
+/* ------------------------ */
+.cont-footer__div--derecha {
+    margin-top: 30px;
+    padding-top: 25px;
+    text-align: right;
+    padding-right: 35px;
+    width: 29%;
+    color: white;
+}
+
+/* ----------------------------- */
+.cont-list {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-list {
+    width: 80%;
+    height: 100%;
+}
+
+.footer-list ul {
+    padding-left: 50px;
+}
+
+.footer-list ul li {
+    display: inline-block;
+}
+
+.item {
+    margin-left: 50px;
+}
+
+/* ----------------------- */
+.footer-icon {
+    text-align: center;
+    color: white;
+    width: 20%;
+    height: 100%;
+    transition: 1s;
+}
+
+.footer-icon ul li svg:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.footer-icon ul {
+    margin-right: 35px;
+}
+
+.footer-icon ul li {
+    display: inline-block;
+    margin-left: 25px;
+
+}
+
+/* ------------------------- */
+.contenedor-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* height: 210px; */
+}
+.contenedor-img .card-img a img{
+    display:flex;
+    height: 80px;
+}
+
+.card-footer {
+    width: 65%;
+    height: 100%;
+}
+
+.card-footer a img {
+    margin-top: 50px;
+    margin-left: 35px;
+}
+
+.card-img {
+    color: white;
+    width: 35%;
+    height: 100%;
+}
+
+.card-img a img {
+    height: 35%;
+    margin-top: 5%;
+}
+
+p {
+    display: inline-block;
+}
+
+/* ----------------------- */
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+a:hover {
+    color: hsl(25, 100%, 50%);
+}
